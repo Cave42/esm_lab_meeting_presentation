@@ -14,3 +14,15 @@
     max-width: 100%;
     max-height: 100%;
   }
+
+  /* completely hide the arrow controls */
+  .reveal .controls {
+    display: none !important;
+  }
+
+  /* if you only want to hide the left/right but keep other elements,
+   you can target their selectors directly: */
+  .reveal .navigate-left,
+  .reveal .navigate-right {
+    display: none !important;
+  }

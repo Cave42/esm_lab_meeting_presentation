@@ -23,6 +23,13 @@
 	<div class="reveal">
 		<div class="slides">
 
+			<!--<section data-markdown>
+				<textarea data-template>
+    ## Slide 1
+    A paragraph with some text and a [link](https://hakim.se).
+  </textarea>
+			</section>-->
+
 			<section style="position: relative; padding-top: 2em;">
 				<h4>Using ESM to Predict Viable Flu Strains</h4>
 				<div style="padding-top: 2em;"></div>
@@ -41,11 +48,13 @@
 				<h4>Influenza is constantly evolving</h4>
 				<div style="padding-top: 2em;"></div>
 
-				<p>Each year, public health organizations and researchers must develop a new vaccine.</p>
+				<p class="fragment" Fade in> Each year, public health organizations and researchers must develop a new
+					vaccine.</p>
 
 				<div style="padding-top: .25em;"></div>
 
-				<p>To produce an effective vaccine, forecasting models are used to predict future viral variants.</p>
+				<p class="fragment" Fade in> To produce an effective vaccine, forecasting models are used to predict
+					future viral variants.</p>
 			</section>
 
 
@@ -107,12 +116,14 @@
 
 			</section>
 
-			<section>
-
-				<h4>Three Base Pretrain Models</h4>
-
+			<section data-auto-animate>
+				<h4>Three Base Pretrained Models</h4>
 				<p style="margin-bottom: 2em;"></p>
+			</section>
 
+			<section data-auto-animate>
+				<h4>Three Base Pretrained Models</h4>
+				<p style="margin-bottom: 2em;"></p>
 				<ul>
 					<li>650 Million Protein Model</li>
 					<li>3 Billion Protein Model</li>
@@ -220,17 +231,6 @@
 			</section>
 
 			<section>
-				<h5>ESM Log Likelihood vs Maximum Frequency Base Models Compared</h5>
-				<img src="images/HA_LL_vs_Max_Frequency.png">
-			</section>
-
-			<section>
-				<h5>Spearman Correlation Comparison Base Model Compared Grouped</h5>
-				<img src="images/Spearman_Correlation_Comparision_Base_Model.png"
-					alt="Spearman Correlation Comparison Base Model">
-			</section>
-
-			<section>
 				<h4>Nextstrain Tree with Log Likelihood</h4>
 				<img src="images/Nextstrain_ESM_Scores.svg" alt="Nextstrain ESM Scores">
 			</section>
@@ -244,12 +244,24 @@
 
 			<section>
 				<h5>Fine Tune vs Base 650M ESM Model Log Likelihood Over Time</h5>
-				<img src="images/650M_4x4_grid.png">
+				<img id="comparison-image" src="images/650M_4x4_grid.png" style="width: 800px;">
 			</section>
+
 
 			<section>
 				<h5>Fine Tune vs Base 3B ESM Model Log Likelihood Over Time</h5>
 				<img src="images/3B_4x4_grid.png">
+			</section>
+
+			<section>
+				<h5>ESM Log Likelihood vs Maximum Frequency Base Models Compared</h5>
+				<img src="images/HA_LL_vs_Max_Frequency.png">
+			</section>
+
+			<section>
+				<h5>Spearman Correlation Comparison Base Model Compared Grouped</h5>
+				<img src="images/Spearman_Correlation_Comparision_Base_Model.png"
+					alt="Spearman Correlation Comparison Base Model">
 			</section>
 
 			<section>
@@ -302,8 +314,8 @@
 			</section>
 
 			<section>
-				<h5>Working With A larger flu tree training model up to 2020</h5>
-				<img src="images/Spearman_Correlation_Comparison_LG_Tree_2020.png"
+				<h5>Spearman Correlation Large and Small trees, 1990 to 2005</h5>
+				<img src="images/Spearman_Correlation_Overlay_1990_to_2005.png"
 					style="margin: 0 auto 4rem auto; background: transparent;">
 			</section>
 
@@ -316,9 +328,9 @@
 				</ul>
 			</section>
 
-
-
-
+			<section>
+				<h3>Thank You</h3>
+			</section>
 
 			<!-- Reveal.js core and plugins -->
 			<script src="reveal.js/dist/reveal.js"></script>
